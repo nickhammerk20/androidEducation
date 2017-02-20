@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
              etSurename.getText().toString(),
              etPhone.getText().toString(),
              etMail.getText().toString(),
-            etSkype.getText().toString());
+             etSkype.getText().toString());
         Intent intent = new Intent(MainActivity.this, ListPersonActivity.class);
 
         intent.putExtra("id", person.getmId());
