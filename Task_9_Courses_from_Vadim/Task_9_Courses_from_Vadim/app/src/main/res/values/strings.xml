@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Task_9_Courses_from_Vadim</string>
+
+    <string name="txt_et_put_id">Put ID</string>
+    <string name="txt_btn_save">SAVE</string>
+    <string name="txt_main_put_name">Put Name</string>
+    <string name="txt_main_put_surname">Put Surname</string>
+    <string name="txt_main_put_phone">Put Phone</string>
+    <string name="txt_main_put_mail">Put Mail</string>
+    <string name="txt_main_put_skype">Put Skype</string>
+
+    <string name="txt_menu_second_list">list persons</string>
+
+    <string name="txt_second_menu_delete_all">delete all</string>
+    <string name="txt_second_menu_delete_person">delete person</string>
+
+    <string name="txt_second_menu_get_person">get person</string>
+    <string name="txt_second_menu_update_person">update person</string>
+
+</resources>

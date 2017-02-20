@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Ванька, пора спать!!</string>
+    <string name="txt_et_main_put_first_value">Put first value</string>
+    <string name="txt_tv_main_hello_main_activity">Hello Main Activity</string>
+    <string name="txt_et_main_put_second_value">Put second value</string>
+    <string name="txt_btn_main_plus">+</string>
+    <string name="txt_btn_main_minus">-</string>
+    <string name="txt_btn_main_multiply">*</string>
+    <string name="txt_btn_main_divide">/</string>
+    <string name="txt_btn_main_one">1</string>
+    <string name="txt_btn_main_two">2</string>
+    <string name="txt_btn_main_three">3</string>
+    <string name="txt_btn_main_four">4</string>
+    <string name="txt_btn_main_five">5</string>
+    <string name="txt_btn_main_six">6</string>
+    <string name="txt_btn_main_seven">7</string>
+    <string name="txt_btn_main_eight">8</string>
+    <string name="txt_btn_main_nine">9</string>
+    <string name="txt_btn_main_zero">0</string>
+</resources>
