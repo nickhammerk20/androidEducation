@@ -41,7 +41,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()) {
             case R.id.btn_main_save:
-                Person personModel = new Person(Integer.valueOf(etId.getText().toString()),
+                Person personModel = new Person(
+                        Integer.valueOf(etId.getText().toString()),
                         etName.getText().toString(),
                         etSurename.getText().toString(),
                         etPhone.getText().toString(),
@@ -81,7 +82,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void followToListPersons() {
         Intent intent = new Intent(MainActivity.this, ListPersonActivity.class);
-        startActivityForResult(intent, 0);
+//        startActivityForResult(intent, 0);
+        startActivity(intent);
     }
 
     @Override                                                                                        // зачем это?????
