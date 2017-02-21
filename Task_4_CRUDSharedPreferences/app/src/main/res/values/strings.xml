@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Task_4_CRUDSharedPreferences</string>
+
+    <string name="txt_menu_list_persons">list persons</string>
 </resources>
