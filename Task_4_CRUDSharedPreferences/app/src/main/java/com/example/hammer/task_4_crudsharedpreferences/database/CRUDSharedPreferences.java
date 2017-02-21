@@ -1,8 +1,9 @@
-package com.example.hammer.task_4_crudsharedpreferences;
+package com.example.hammer.task_4_crudsharedpreferences.database;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import com.example.hammer.task_4_crudsharedpreferences.Person;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
