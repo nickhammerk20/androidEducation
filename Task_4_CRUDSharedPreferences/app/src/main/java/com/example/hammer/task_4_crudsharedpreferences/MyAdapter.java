@@ -49,6 +49,7 @@ public class MyAdapter extends BaseAdapter
         {
             rootView = LayoutInflater.from(mContext).inflate(R.layout.item_person, viewGroup, false);
         }
+//        TextView tvId = (TextView) rootView.findViewById(R.id.tv_item_person_id);
         TextView tvName = (TextView) rootView.findViewById(R.id.tv_item_person_name);
         TextView tvSurname = (TextView) rootView.findViewById(R.id.tv_item_person_surname);
         TextView tvPhone = (TextView) rootView.findViewById(R.id.tv_item_person_phone);
