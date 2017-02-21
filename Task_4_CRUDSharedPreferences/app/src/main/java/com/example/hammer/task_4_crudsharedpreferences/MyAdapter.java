@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.example.hammer.task_4_crudsharedpreferences.database.CRUDSharedPreferences;
+
 import java.util.ArrayList;
 
 /**
@@ -15,8 +17,10 @@ import java.util.ArrayList;
 
 public class MyAdapter extends BaseAdapter
 {
+    private static final int RESULT_OK = 0;
     private Context mContext;
     private ArrayList<Person> mList;
+    CRUDSharedPreferences crudSharedPreferences;
 
     public MyAdapter(Context mContext, ArrayList<Person> mList) {
         this.mContext = mContext;

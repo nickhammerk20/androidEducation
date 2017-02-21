@@ -41,11 +41,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()) {
             case R.id.btn_main_save:
-                Person personModel = new Person(Integer.valueOf(etId.getText().toString()), etName.getText().toString(),
+                Person personModel = new Person(Integer.valueOf(etId.getText().toString()),
+                        etName.getText().toString(),
                         etSurename.getText().toString(),
                         etPhone.getText().toString(),
                         etMail.getText().toString(),
                         etSkype.getText().toString());
+
                 crudSharedPreferences.addPerson(this, personModel);
                 clearText();
                 followToListPersons();
@@ -53,7 +55,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 break;
         }
-
 //        // From usage Intent
 //        Intent intent = new Intent(MainActivity.this, ListPersonActivity.class);
 //

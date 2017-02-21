@@ -21,30 +21,35 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/et_main_id"
         android:hint="put name"/>
+
     <EditText
         android:id="@+id/et_main_surname"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_main_name"
         android:hint="put surename"/>
+
     <EditText
         android:id="@+id/et_main_phone"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_main_surname"
         android:hint="put phone"/>
+
     <EditText
         android:id="@+id/et_main_mail"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_main_phone"
         android:hint="put mail"/>
+
     <EditText
         android:id="@+id/et_main_skype"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_main_mail"
         android:hint="put skype"/>
+
     <Button
         android:id="@+id/btn_main_save"
         android:layout_width="match_parent"
