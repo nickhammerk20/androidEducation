@@ -17,10 +17,10 @@ import java.util.ArrayList;
 
 public class MyAdapter extends BaseAdapter
 {
-    private static final int RESULT_OK = 0;
+//    private static final int RESULT_OK = 0;
     private Context mContext;
     private ArrayList<Person> mList;
-    CRUDSharedPreferences crudSharedPreferences;
+//    CRUDSharedPreferences crudSharedPreferences;
 
     public MyAdapter(Context mContext, ArrayList<Person> mList) {
         this.mContext = mContext;
