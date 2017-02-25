@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Task_9_SQLite</string>
+    <string name="txt_main_put_name">Name</string>
+    <string name="txt_main_put_surname">Surname</string>
+    <string name="txt_main_put_mail">Mail</string>
+    <string name="txt_main_put_number">Number</string>
+    <string name="txt_main_put_skype">Skype</string>
+    <string name="txt_btn_save">Save</string>
+    <string name="txt_et_put_id">ID</string>
+    <string name="txt_main_put_phone">Phone</string>
+    <string name="txt_second_menu_get_person">Get Person</string>
+    <string name="txt_second_menu_delete_all">Delete All</string>
+    <string name="txt_menu_second_list">Second List</string>
 </resources>

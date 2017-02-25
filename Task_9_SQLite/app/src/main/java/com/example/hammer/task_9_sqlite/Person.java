@@ -5,12 +5,21 @@ package com.example.hammer.task_9_sqlite;
  */
 public class Person {
 
+    public static Person selectedPerson;
     private int mId;
     private String mName;
     private String mSurename;
     private String mPhoneNumber;
     private String mMail;
     private String mSkype;
+
+    public Person(String mName, String mSurename, String mPhoneNumber, String mMail, String mSkype) {
+        this.mName = mName;
+        this.mSurename = mSurename;
+        this.mPhoneNumber = mPhoneNumber;
+        this.mMail = mMail;
+        this.mSkype = mSkype;
+    }
 
     public Person(int mId, String mName, String mSurename, String mPhoneNumber, String mMail, String mSkype) {
         this.mId = mId;
