@@ -44,11 +44,6 @@ public class MyAdapter extends BaseAdapter{
         this.persons = persons;
     }
 
-    public MyAdapter(SecondActivity secondActivity, ArrayList<Person> persons) {
-
-
-    }
-
     public void changePersonsList(ArrayList<Person> personsList) {
         this.persons = personsList;
         notifyDataSetChanged();
