@@ -8,7 +8,7 @@ package com.example.hammer.task_9_sqlite;
 //Создание структуры таблицы
 
 
-public class config {
+public class Config {
     public static final String DB_NAME = "Person Data Base";            // Имя базы
 
     public static final String TABLE_PERSON = "Person";                 // Имя таблицы

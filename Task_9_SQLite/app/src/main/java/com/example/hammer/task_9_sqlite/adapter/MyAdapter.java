@@ -10,10 +10,10 @@ import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.example.hammer.task_9_sqlite.DetailsPersonsActivity;
-import com.example.hammer.task_9_sqlite.Person;
+import com.example.hammer.task_9_sqlite.ui.DetailsPersonsActivity;
+import com.example.hammer.task_9_sqlite.model.Person;
 import com.example.hammer.task_9_sqlite.R;
-import com.example.hammer.task_9_sqlite.SecondActivity;
+import com.example.hammer.task_9_sqlite.ui.SecondActivity;
 import com.example.hammer.task_9_sqlite.database.CRUDSQLite;
 
 import java.util.ArrayList;

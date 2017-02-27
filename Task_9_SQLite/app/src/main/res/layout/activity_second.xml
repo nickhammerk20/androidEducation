@@ -10,7 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context="com.example.hammer.task_9_sqlite.SecondActivity">
+    tools:context="com.example.hammer.task_9_sqlite.ui.SecondActivity">
 
     <ListView
         android:id="@+id/list_view_second_person"

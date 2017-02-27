@@ -4,7 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.example.hammer.task_9_sqlite.config;
+import com.example.hammer.task_9_sqlite.Config;
 
 
 /**
@@ -14,17 +14,17 @@ import com.example.hammer.task_9_sqlite.config;
 public class SQLiteDBHelper extends SQLiteOpenHelper{
 
     public SQLiteDBHelper(Context context) {
-        super(context, config.DB_NAME, null, config.DB_VERSION);
+        super(context, Config.DB_NAME, null, Config.DB_VERSION);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(config.COMMAND_CREATE);
+        db.execSQL(Config.COMMAND_CREATE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL(config.COMMAND_DELETE);
+        db.execSQL(Config.COMMAND_DELETE);
         this.onCreate(db);
     }
 }

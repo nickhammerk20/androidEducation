@@ -1,4 +1,4 @@
-package com.example.hammer.task_9_sqlite;
+package com.example.hammer.task_9_sqlite.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.hammer.task_9_sqlite.model.Person;
+import com.example.hammer.task_9_sqlite.R;
 import com.example.hammer.task_9_sqlite.database.CRUDSQLite;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{

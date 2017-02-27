@@ -1,4 +1,4 @@
-package com.example.hammer.task_9_sqlite;
+package com.example.hammer.task_9_sqlite.ui;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -13,6 +13,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import com.example.hammer.task_9_sqlite.model.Person;
+import com.example.hammer.task_9_sqlite.R;
 import com.example.hammer.task_9_sqlite.adapter.MyAdapter;
 import com.example.hammer.task_9_sqlite.database.CRUDSQLite;
 

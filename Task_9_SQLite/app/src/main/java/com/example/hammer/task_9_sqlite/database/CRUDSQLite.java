@@ -5,8 +5,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.example.hammer.task_9_sqlite.Person;
-import com.example.hammer.task_9_sqlite.config;
+import com.example.hammer.task_9_sqlite.model.Person;
+import com.example.hammer.task_9_sqlite.Config;
 
 import java.util.ArrayList;
 
@@ -26,7 +26,7 @@ public class CRUDSQLite {
     {
         ArrayList<Person> persons = new ArrayList<Person>();
         SQLiteDatabase db = sqLiteDBHelper.getWritableDatabase();
-        Cursor cursor = db.rawQuery(config.COMMAND_SELECT, null);
+        Cursor cursor = db.rawQuery(Config.COMMAND_SELECT, null);
         Person person;
         if(cursor.moveToFirst())
         {
@@ -48,9 +48,9 @@ public class CRUDSQLite {
     {
         ArrayList<Person> persons = new ArrayList<Person>();
         SQLiteDatabase db = sqLiteDBHelper.getWritableDatabase();
-        Cursor cursor = db.query(config.TABLE_PERSON,   // имя таблицы
+        Cursor cursor = db.query(Config.TABLE_PERSON,   // имя таблицы
                 null,                                   // имя колонки
-                config.KEY_ID + " = " + id,             // отбор по ИДишнику
+                Config.KEY_ID + " = " + id,             // отбор по ИДишнику
                 null,                                   //
                 null,                                   // группировки
                 null,                                   //
@@ -75,25 +75,25 @@ public class CRUDSQLite {
         SQLiteDatabase db = sqLiteDBHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
 
-        values.put(config.KEY_NAME, person.getmName());
-        values.put(config.KEY_SURENAME, person.getmSurename());
-        values.put(config.KEY_PHONE, person.getmPhoneNumber());
-        values.put(config.KEY_SKYPE, person.getmSkype());
-        values.put(config.KEY_MAIL, person.getmMail());
-        db.insert(config.TABLE_PERSON, null, values);
+        values.put(Config.KEY_NAME, person.getmName());
+        values.put(Config.KEY_SURENAME, person.getmSurename());
+        values.put(Config.KEY_PHONE, person.getmPhoneNumber());
+        values.put(Config.KEY_SKYPE, person.getmSkype());
+        values.put(Config.KEY_MAIL, person.getmMail());
+        db.insert(Config.TABLE_PERSON, null, values);
         db.close();
     }
 
     public void deleteAllPerson()
     {
         SQLiteDatabase db = sqLiteDBHelper.getWritableDatabase();
-        db.delete(config.TABLE_PERSON, null, null);
+        db.delete(Config.TABLE_PERSON, null, null);
         db.close();
     }
     public void deletePerson(int id)
     {
         SQLiteDatabase db = sqLiteDBHelper.getWritableDatabase();
-        db.delete(config.TABLE_PERSON, config.KEY_ID + " = " + id, null);
+        db.delete(Config.TABLE_PERSON, Config.KEY_ID + " = " + id, null);
         db.close();
     }
 
@@ -102,13 +102,13 @@ public class CRUDSQLite {
         SQLiteDatabase db = sqLiteDBHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
 
-        values.put(config.KEY_NAME, name);
-        values.put(config.KEY_SURENAME, surename);
-        values.put(config.KEY_PHONE, phone);
-        values.put(config.KEY_SKYPE, skype);
-        values.put(config.KEY_MAIL, mail);
+        values.put(Config.KEY_NAME, name);
+        values.put(Config.KEY_SURENAME, surename);
+        values.put(Config.KEY_PHONE, phone);
+        values.put(Config.KEY_SKYPE, skype);
+        values.put(Config.KEY_MAIL, mail);
 
-        db.update(config.TABLE_PERSON, values, config.KEY_ID + " = " + id, null);
+        db.update(Config.TABLE_PERSON, values, Config.KEY_ID + " = " + id, null);
         db.close();
     }
 }

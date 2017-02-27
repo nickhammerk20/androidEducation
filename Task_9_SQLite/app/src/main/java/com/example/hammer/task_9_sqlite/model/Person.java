@@ -1,8 +1,9 @@
-package com.example.hammer.task_9_sqlite;
+package com.example.hammer.task_9_sqlite.model;
 
 /**
  * Created by hammer on 22.02.2017.
  */
+
 public class Person {
 
     public static Person selectedPerson;

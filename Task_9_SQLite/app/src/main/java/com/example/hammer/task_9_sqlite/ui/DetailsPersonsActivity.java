@@ -1,9 +1,12 @@
-package com.example.hammer.task_9_sqlite;
+package com.example.hammer.task_9_sqlite.ui;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import com.example.hammer.task_9_sqlite.model.Person;
+import com.example.hammer.task_9_sqlite.R;
 
 /**
  * Created by hammer on 24.02.2017.
