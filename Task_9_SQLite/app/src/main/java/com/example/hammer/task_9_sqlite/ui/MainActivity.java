@@ -24,11 +24,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        etName = (EditText) findViewById(R.id.edit_text_dialog_name);
-        etSurename = (EditText) findViewById(R.id.edit_text_dialog_surname);
-        etPhone = (EditText) findViewById(R.id.edit_text_dialog_phone_number);
-        etMail = (EditText) findViewById(R.id.edit_text_dialog_mail);
-        etSkype = (EditText) findViewById(R.id.edit_text_dialog_skype);
+        etName = (EditText) findViewById(R.id.edit_text_main_name);
+        etSurename = (EditText) findViewById(R.id.edit_text_main_surname);
+        etPhone = (EditText) findViewById(R.id.edit_text_main_phone_number);
+        etMail = (EditText) findViewById(R.id.edit_text_main_mail);
+        etSkype = (EditText) findViewById(R.id.edit_text_main_skype);
         btnSave = (Button) findViewById(R.id.btn_main_save);
         btnSave.setOnClickListener(this);
         crudsqLite = new CRUDSQLite(this);

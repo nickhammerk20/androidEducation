@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 import com.example.hammer.task_9_sqlite.model.Person;
 import com.example.hammer.task_9_sqlite.Config;
@@ -74,12 +75,13 @@ public class CRUDSQLite {
     {
         SQLiteDatabase db = sqLiteDBHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
-
+//        Log.d("as","sa");
         values.put(Config.KEY_NAME, person.getmName());
         values.put(Config.KEY_SURENAME, person.getmSurename());
         values.put(Config.KEY_PHONE, person.getmPhoneNumber());
-        values.put(Config.KEY_SKYPE, person.getmSkype());
         values.put(Config.KEY_MAIL, person.getmMail());
+        values.put(Config.KEY_SKYPE, person.getmSkype());
+//        Log.d("ky","yk");
         db.insert(Config.TABLE_PERSON, null, values);
         db.close();
     }
