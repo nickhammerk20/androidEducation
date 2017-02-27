@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ванька, пора спать!!</string>
+    <string name="app_name">Mini Calc</string>
     <string name="txt_et_main_put_first_value">Put first value</string>
     <string name="txt_tv_main_hello_main_activity">Hello Main Activity</string>
     <string name="txt_et_main_put_second_value">Put second value</string>
