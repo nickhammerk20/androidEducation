@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private int REQUEST_CAMERA = 0, SELECT_FILE = 1;
     private Button btnSelect;
     private ImageView ivImage;
+    private TextView tv;
 //    private String userChooserTask;
 
     @Override
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         ivImage = (ImageView) findViewById(R.id.iv_image);
+        tv = (TextView) findViewById(R.id.txt_property_img);
     }
 
     private void selectImage() {
@@ -120,6 +123,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         ivImage.setImageBitmap(thumbnail);
+        tv.setText("");
     }
 
     private void onSelectFromGalleryResult(Intent data)
