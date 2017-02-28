@@ -14,13 +14,13 @@
         android:id="@+id/btn_select_photo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Photo"/>
+        android:text="Select Photo" />
 
     <ImageView
         android:id="@+id/iv_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_select_photo"
+        android:layout_below="@+id/btn_select_photo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:src="@mipmap/ic_camera_enhance_black_24dp"/>
