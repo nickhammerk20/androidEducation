@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //
         etName = (EditText) findViewById(R.id.edit_text_main_name);
         etSurename = (EditText) findViewById(R.id.edit_text_main_surname);
         etPhone = (EditText) findViewById(R.id.edit_text_main_phone_number);
@@ -73,10 +74,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void followToListActivity() {
+        // инициализация Интента с передачей в него двух активностей.
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
         startActivity(intent);
     }
+
     private void followToListActivityWithIntentData() {
+        // инициализация Интента с передачей в него двух активностей и данных из Персоны.
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
         try {
             intent.putExtra("id", Integer.parseInt(etId.getText().toString()));
@@ -89,6 +93,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         clearText();
         startActivity(intent);
     }
+
     private void clearText(){
         etId.setText("");
         etName.setText("");
