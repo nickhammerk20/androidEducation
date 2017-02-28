@@ -8,6 +8,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AlertDialog;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,6 +66,7 @@ public class MyAdapter extends BaseAdapter{
 
     @Override
     public Object getItem(int position) {
+        Log.d("Position ", ""+position);
         return persons.get(position);
     }
 
