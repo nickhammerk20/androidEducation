@@ -1,4 +1,4 @@
-package com.example.hammer.task_10_sqlite_asynctask_loader;
+package com.example.hammer.task_10_sqlite_asynctask_loader.ui;
 
 import android.support.v7.app.AppCompatActivity;
 

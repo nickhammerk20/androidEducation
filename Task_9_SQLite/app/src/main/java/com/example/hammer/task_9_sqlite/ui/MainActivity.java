@@ -15,7 +15,7 @@ import com.example.hammer.task_9_sqlite.database.CRUDSQLite;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private EditText etId, etName, etSurename, etPhone, etMail, etSkype;
+     private EditText etId, etName, etSurename, etPhone, etMail, etSkype;
     private Button btnSave;
     private CRUDSQLite crudsqLite;
 
