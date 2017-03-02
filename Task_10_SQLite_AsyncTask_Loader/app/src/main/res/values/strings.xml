@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Task_10_SQLite_AsyncTask_Loader</string>
+    <string name="txt_main_put_name">Name</string>
+    <string name="txt_main_put_surname">Surname</string>
+    <string name="txt_main_put_skype">Skype</string>
+    <string name="txt_main_put_mail">Mail</string>
+    <string name="txt_main_put_phone_number">Phone</string>
+    <string name="txt_btn_main_save">SAVE</string>
 </resources>
