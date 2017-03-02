@@ -91,12 +91,17 @@ public class MainActivity extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(requestCode == Activity.RESULT_OK)
+//        tv.setText("GoTo - serch!");
+        if(resultCode == Activity.RESULT_OK)
         {
-            if(requestCode == SELECT_FILE)
+            if(requestCode == SELECT_FILE) {
+//                tv.setText("GoTo - SELECT_FILE");
                 onSelectFromGalleryResult(data);
-            else if (requestCode == REQUEST_CAMERA)
+            }
+            else if (requestCode == REQUEST_CAMERA) {
+//                tv.setText("GoTo - REQUEST_CAMERA");
                 onGalleryImageResult(data);
+            }
         }
     }
 
@@ -107,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
         thumbnail.compress(Bitmap.CompressFormat.JPEG, 90 , bytes);
 
         File destination = new File(Environment.getExternalStorageDirectory(),
-//                "TASK_11_"+
+                "TASK_11_"+
                         System.currentTimeMillis() + ".jpg");
         FileOutputStream fo;
 
@@ -123,21 +128,33 @@ public class MainActivity extends AppCompatActivity {
         }
 
         ivImage.setImageBitmap(thumbnail);
-        tv.setText("ffffff");
+        tv.setText("From Camera: \n" + destination.getAbsolutePath());
     }
 
     private void onSelectFromGalleryResult(Intent data)
     {
         Bitmap bm = null;
+        String str = "";
         if(data != null)
         {
             try {
                 bm = MediaStore.Images.Media.getBitmap(getApplicationContext().getContentResolver(), data.getData());
+                //str = MediaStore.Images.Media.getContentUri();
+                //(getApplicationContext().getContentResolver(), data.getData());
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
         ivImage.setImageBitmap(bm);
-        tv.setText("ggggggg");
+        tv.setText("From Gallery: \n" + str);
+    }
+
+    private String fileInfo (File file)
+    {
+        long l = file.getUsableSpace();
+        l = l / 8 / 1024 / 1024;
+        String ret = file.getAbsoluteFile() + "\n"
+                       + l + "Mb";
+        return ret;
     }
 }
