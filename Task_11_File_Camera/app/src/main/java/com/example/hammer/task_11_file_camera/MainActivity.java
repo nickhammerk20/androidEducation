@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         ivImage.setImageBitmap(thumbnail);
-        tv.setText("");
+        tv.setText("ffffff");
     }
 
     private void onSelectFromGalleryResult(Intent data)
@@ -138,5 +138,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         ivImage.setImageBitmap(bm);
+        tv.setText("ggggggg");
     }
 }
