@@ -6,6 +6,7 @@ package com.example.hammer.task_10_sqlite_asynctask_loader.model;
 
 public class Person {
 
+    public static Person selectedPerson;
     private int mId;
     private String mName;
     private String mSurname;

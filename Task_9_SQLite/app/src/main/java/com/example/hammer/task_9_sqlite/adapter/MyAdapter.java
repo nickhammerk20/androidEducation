@@ -197,6 +197,7 @@ public class MyAdapter extends BaseAdapter{
         alertDialogBuilder.create();
         alertDialogBuilder.show();
     }
+
     private void sendNotification(final Person personItem) {
         final int NOTIFY_ID = 101;
 
