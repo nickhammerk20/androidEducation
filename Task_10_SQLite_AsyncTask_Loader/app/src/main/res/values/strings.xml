@@ -15,4 +15,10 @@
     <string name="txt_details_put_mail">MAIL</string>
     <string name="name_activity_person_list">List Person</string>
     <string name="txt_detail_delete">DELETE</string>
+    <string name="txt_menu_list_person">List Person</string>
+    <string name="txt_menu_main_activity">Main</string>
+    <string name="txt_list_menu_delete_all">Delete ALL</string>
+    <string name="txt_list_main_activity">Follow list</string>
+    <string name="txt_detail_menu_delete">Delete Person</string>
+    <string name="txt_list_menu_main_activity">Main</string>
 </resources>
