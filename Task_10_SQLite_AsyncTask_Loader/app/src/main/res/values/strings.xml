@@ -6,4 +6,13 @@
     <string name="txt_main_put_mail">Mail</string>
     <string name="txt_main_put_phone_number">Phone</string>
     <string name="txt_btn_main_save">SAVE</string>
+    <string name="txt_btn_detail_save">SAVE</string>
+    <string name="txt_details_put_name">NAME</string>
+    <string name="txt_details_put_surname">SURNAME</string>
+    <string name="txt_details_put_id">ID</string>
+    <string name="txt_details_put_phone">PHONE</string>
+    <string name="txt_details_put_skype">SKYPE</string>
+    <string name="txt_details_put_mail">MAIL</string>
+    <string name="name_activity_person_list">List Person</string>
+    <string name="txt_detail_delete">DELETE</string>
 </resources>

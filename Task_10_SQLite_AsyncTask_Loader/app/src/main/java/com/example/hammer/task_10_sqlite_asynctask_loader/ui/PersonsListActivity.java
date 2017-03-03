@@ -25,10 +25,11 @@ public class PersonsListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_persons_list);
+        setTitle("List of Person");
+
         lvPersons = (ListView) findViewById(R.id.list_view_persons_list);
-        persons = new ArrayList<>();
+        persons = new ArrayList<Person>();
         crudsqLite = new CRUDSQLite(this);
         persons = crudsqLite.getAllPerson();
         myAdapter = new MyAdapter(this, persons);
