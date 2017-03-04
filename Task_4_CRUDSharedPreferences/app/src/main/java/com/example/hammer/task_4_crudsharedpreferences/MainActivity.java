@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         etPhone = (EditText) findViewById(R.id.et_main_phone);
         etMail = (EditText) findViewById(R.id.et_main_mail);
         etSkype = (EditText) findViewById(R.id.et_main_skype);
-
     }
 
     @Override

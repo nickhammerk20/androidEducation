@@ -1,8 +1,11 @@
 package com.example.hammer.task_10_sqlite_asynctask_loader.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 import com.example.hammer.task_10_sqlite_asynctask_loader.R;
@@ -36,4 +39,31 @@ public class PersonsListActivity extends AppCompatActivity {
         lvPersons.setAdapter(myAdapter);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.list, menu);
+        return true;
+//        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if(id == R.id.action_list_main_activity){
+            followToMainActivity();
+            return true;
+        }
+        else if(id == R.id.action_list_delete_all){
+            crudsqLite.deleteAllPerson();
+            followToMainActivity();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+    private void followToMainActivity()
+    {
+        Intent intent = new Intent(PersonsListActivity.this, MainActivity.class);
+        startActivity(intent);
+    }
 }

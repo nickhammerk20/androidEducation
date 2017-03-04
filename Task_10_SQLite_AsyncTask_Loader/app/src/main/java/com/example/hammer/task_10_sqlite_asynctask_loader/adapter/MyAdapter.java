@@ -32,8 +32,6 @@ public class MyAdapter extends BaseAdapter {
         this.persons = persons;
     }
 
-
-
     @Override
     public int getCount() {
         return persons.size();
@@ -79,5 +77,6 @@ public class MyAdapter extends BaseAdapter {
         });
         return view;
     }
+
 
 }
